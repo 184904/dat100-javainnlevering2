@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Tabeller {
 	public static void main(String[] args) {
-		int[] tabell = {1,2,3,4,5};
+		int[] tabell = {0,2,3,4,5};
 		skrivUt(tabell);
 	}
 
