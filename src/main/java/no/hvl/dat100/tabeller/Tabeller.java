@@ -1,13 +1,27 @@
 package no.hvl.dat100.tabeller;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Tabeller {
+	public static void main(String[] args) {
+		int[] tabell = {1,2,3,4,5};
+		skrivUt(tabell);
+	}
 
 	// a)
 	public static void skrivUt(int[] tabell) {
 
 		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
-
+		for (int e : tabell) {
+			if (e == 0) {
+				System.out.println("Du kan bare ha heltall");
+				break;
+			} else {
+				System.out.println(Arrays.toString(tabell));
+				break;
+			}
+		}
 	}
 
 	// b)
@@ -15,7 +29,7 @@ public class Tabeller {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-	}
+	}      	
 
 	// c)
 	public static int summer(int[] tabell) {
