@@ -4,13 +4,10 @@ package no.hvl.dat100.tabeller;
 import java.util.Arrays;
 
 public class Tabeller {
-<<<<<<< HEAD
-=======
 	public static void main(String[] args) {
 		int[] tabell = {0,2,3,4,5};
 		skrivUt(tabell);
 	}
->>>>>>> 3644657545227b3169419fe7314cca017296588d
 
 	// a)
 	public static void skrivUt(int[] tabell) {
