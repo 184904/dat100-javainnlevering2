@@ -13,7 +13,8 @@ public class Matriser {
 		}
 	}
 
-	// b)
+	// b)    md
+	
 	public static String tilStreng(int[][] matrise) {
 		String matriseString = "";
 		for (int[] a : matrise) {
@@ -54,10 +55,5 @@ public class Matriser {
 			}
 		}
 		return matriseSpeilet;
-	}
-
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
-		return a;
 	}
 }

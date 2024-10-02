@@ -1,8 +1,5 @@
 package no.hvl.dat100.tabeller;
 
-
-import java.util.Arrays;
-
 public class Tabeller {
 	public static void main(String[] args) {
 		int[] tabell = {0,2,3,4,5};
@@ -11,22 +8,32 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-
+		System.out.print("[");
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == 0) {
-				System.out.println("Må være et heltall");
-				break;
+				System.out.println("Må være et helt tall");
 			} else {
-				System.out.println(Arrays.toString(tabell));
-				break;
+				System.out.print(tabell[i]);
+				if (i < tabell.length - 1) {
+					System.out.print(",");
+				}
 			}
 		}
+		System.out.println("]");
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
-		System.out.println(Arrays.toString(tabell).replace(" ", ""));
-		return Arrays.toString(tabell).replace(" ", "");
+		String hello = "[";
+		for (int i = 0; i < tabell.length; i++) {
+			hello += Integer.toString(tabell[i]);
+			if (i < tabell.length - 1) {
+				hello += ",";
+			}
+		}
+		hello += "]";
+		System.out.println(hello);
+		return hello;
 	}      	
 
 	// c)
@@ -71,7 +78,6 @@ public class Tabeller {
 			nyListe[i] = tabell[j];
 			j--;
 		}
-		System.out.println(Arrays.toString(nyListe));
 		return nyListe;
 	}
 
@@ -86,8 +92,6 @@ public class Tabeller {
 				sjekkOmSortert = false;
 			}
 		}
-		System.out.println(Arrays.toString(tabell));
-		System.out.println(sjekkOmSortert);
 		return sjekkOmSortert;
 	}
 
@@ -102,7 +106,6 @@ public class Tabeller {
 			nyListe[j] = tabell2[y];
 			y++;
 		}
-		System.out.println(Arrays.toString(nyListe));
 		return nyListe;
 	}
 }
